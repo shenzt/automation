@@ -63,5 +63,12 @@ edit `/etc/postgresql/9.1/main/pg_hba.conf` with the following lines.
 
     apt-get install curl
 
+### Start the scripts from boot
 
+     sudo nano /etc/rc.local
+
+Add the following commands
+
+    /opt/automation/script/startup.sh
+    
 
