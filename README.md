@@ -32,7 +32,11 @@ Add the following settings to `/etc/network/interfaces`
 
 ### Change your hostname
 
-    nano /etc/hostname
+    sudo nano /etc/hostname
+
+### Change DNS server
+
+    sudo nano /etc/resolv.conf
 
 ### Create a new user
 
@@ -41,14 +45,14 @@ Add the following settings to `/etc/network/interfaces`
 
 ### Disable apache2
     
-    update-rc.d apache2 disable 
+    sudo update-rc.d apache2 disable 
 
 ### Setup Python environment
 
-    apt-get install python-pip
+    sudo apt-get install python-pip
     sudo pip install xively-python --pre
     sudo pip install pyserial
-    sudo pip install psycopg2
+    sudo pip install socketIO_client
 
 ### Setup PostgreSQL
 
@@ -61,7 +65,7 @@ edit `/etc/postgresql/9.1/main/pg_hba.conf` with the following lines.
 
 ### Misc 
 
-    apt-get install curl
+    apt-get install curl 
 
 ### Start the scripts from boot
 
