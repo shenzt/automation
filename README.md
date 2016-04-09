@@ -75,4 +75,23 @@ Add the following commands
 
     /opt/automation/script/startup.sh
     
+    
+### On Raspbian
+
+    sudo apt-get install python-pip
+    sudo pip install xively-python --pre
+    sudo pip install pyserial
+    sudo pip install socketIO_client pytz
+    sudo apt-get install postgresql python-psycopg2 nodejs npm
+    
+    
+### Install pyapwi
+https://code.google.com/archive/p/python-weather-api/
+    sudo npm install forever -g
+
+
+
+
+    
+
 
